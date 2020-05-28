@@ -38,22 +38,38 @@
 //     res.end();
 // }).listen(3000);
 
-const handler = function (req, res) {
+// const handler = function (req, res) {
     
-        /* El codigo dentro de este metodo ejecutado se ejecuta solo al levatar el servidor 
-        se se desea actualizar el h1 se debe cancelar el localhost y volverlo a levantar*/
-        res.write("<h1>Hola Desde Node Httprequest");
-        res.end();
-}
+//         /* El codigo dentro de este metodo ejecutado se ejecuta solo al levatar el servidor 
+//         se se desea actualizar el h1 se debe cancelar el localhost y volverlo a levantar*/
+//         res.write("<h1>Hola Desde Node Httprequest");
+//         res.end();
+// }
 
-const http = require("http");
+// const http = require("http");
+// const colors = require("colors");
+
+// const server = http.createServer(handler);
+
+// server.listen(3000, function () {
+//     //Green es del npm colors son los equivalentes a los paquetes nugets
+//     //se lo instala con el comando npm install colors
+//     console.log("Server 3000".green);
+    
+// })
+
+//Paquete express
+const express = require("express");
 const colors = require("colors");
 
-const server = http.createServer(handler);
+const server = express();
 
-server.listen(3000, function () {
-    //Green es del npm colors son los equivalentes a los paquetes nugets
-    //se lo instala con el comando npm install colors
-    console.log("Server 3000".green);
+server.get('/', (req,res) =>{
+    res.send("<h1>Hola Con Express y Node</h1>");
+    res.end();
+});
+
+server.listen(3000, () => {
+    console.log("Server on 3000".red);
     
 })
