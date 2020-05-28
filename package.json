@@ -1,0 +1,27 @@
+{
+  "name": "node-prueba",
+  "version": "0.0.1",
+  "description": "prueba node",
+  "main": "index.js",
+  "dependencies": {
+    "colors": "^1.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bostel87/Prueba-Node.js.git"
+  },
+  "keywords": [
+    "prueba",
+    "node"
+  ],
+  "author": "Bostel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bostel87/Prueba-Node.js/issues"
+  },
+  "homepage": "https://github.com/Bostel87/Prueba-Node.js#readme"
+}
